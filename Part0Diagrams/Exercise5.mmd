@@ -1,0 +1,11 @@
+sequenceDiagram
+  participant User as User
+  participant Server as Server
+
+  User ->> Server: HTTP GET /spa.html
+  Server ->> User: /spa.html
+  User ->> Server: HTTP GET notes.css
+  Server ->> User: notes.css
+  User ->> Server: HTTP GET spa.js
+  Server ->> User: spa.js
+  User->>User: Save spa.js
