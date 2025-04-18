@@ -1,0 +1,9 @@
+sequenceDiagram
+    User->>Server: HTTP POST "Msg contents"
+    Server->>User: Redirect to /notes.html
+    User->>Server: HTTP GET /notes
+    Server->>User: /notes
+    User->>Server: HTTP GET notes.css
+    Server->>User: notes.css
+    User->>Server: HTTP GET notes.js
+    Server->>User: notes.js
