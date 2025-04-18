@@ -1,0 +1,10 @@
+sequenceDiagram
+  participant User as User
+  participant Internal as Internal
+  participant Server as Server
+
+  User ->> Server: HTTP POST "Msg contents"
+  User ->> Internal: Save note in notes.js
+  Internal ->> User: Reload notes.js
+
+
